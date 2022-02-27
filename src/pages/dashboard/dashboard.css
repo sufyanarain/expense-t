@@ -1,0 +1,369 @@
+.display-transaction-div {
+  height: calc(100vh - 50px);
+  width: 90%;
+  margin: auto;
+  /* position: relative; */
+  background-color: #f8f9fa;
+  overflow-x: scroll;
+  height: 460px;
+}
+
+
+.transaction-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  /* position: absolute; */
+  width: 100%;
+}
+
+.transaction-table td, .transaction-table {
+  border: 1px solid rgb(231, 231, 231);
+  padding: 18px;
+}
+
+.transaction-table td {
+  width: 20%;
+  font-size: 14px;
+}
+
+
+.td-id, .td-date {
+  color: rgb(102, 102, 102);
+}
+
+
+.td-amount span {
+  font-size: 12px;
+  color: rgb(102, 102, 102);
+}
+
+.expense-Edit {
+  cursor: pointer;
+
+}
+
+.expense-Edit:hover {
+  color: #27bb5f;
+}
+
+
+
+.transaction-table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.transaction-table tr:hover {
+  background-color: rgb(246, 246, 246);
+}
+
+.transaction-table th {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-weight: 500;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+
+.transaction-table .total-amount, .transaction-table .total-td {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgb(231, 231, 231);
+}
+
+.expense-delete {
+  cursor: pointer;
+}
+
+.expense-delete:hover {
+  color: rgb(247, 53, 53);
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.user-name-logout-btn-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+
+  margin: 10px auto;
+}
+
+
+.dashboard-main-div {
+  background-color: #f8f9fa;
+  position: relative;
+}
+
+.heading-buttons-top-div {
+  height: 200px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 15px 30px; */
+}
+
+.btn {
+  cursor: pointer;
+  font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif;
+  letter-spacing: 1px;
+  font-size: 13px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  transition: all .3s ease-in-out;
+  user-select: none;
+  border: 1px solid transparent;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.primary {
+  background-color: #27bb5f;
+  border-color: #27bb5f;
+  color: #fff;
+}
+
+.modal-btns {
+  display: flex;
+}
+
+.add-category-input {
+  width: 210px;
+  height: 42px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 2px 10px;
+  margin-right: 10px;
+}
+
+.add-category-input:focus {
+  outline: 1px solid #ccc;
+
+}
+
+.update-name-div {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.update-name-div input {
+  width: 250px;
+  height: 44px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 2px 10px;
+  margin-right: 10px;
+
+}
+
+.add-input-btn {
+  margin: 0;
+}
+
+.category-error {
+  border: 1px solid rgb(247, 53, 53);
+}
+
+.logout-btn {
+  font-size: 44px;
+  cursor: pointer;
+  color: rgb(248, 42, 42);
+}
+
+.search-input {
+  width: 250px;
+  height: 42px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 2px 10px;
+  margin-right: 10px;
+}
+
+.filter-select {
+  width: 250px;
+  height: 42px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 2px 10px;
+  margin-right: 10px;
+}
+
+.seartch-div {
+  margin-bottom: 10px;
+}
+
+.filter-icon{
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.filtered {
+  color: #27bb5f;
+}
+
+.pagination-btn{
+  width: 45px;
+  height: 30px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 1070px) {
+
+  .dashboard-main-div .heading-buttons-top-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .display-transaction-div{
+    /* width: 900px; */
+    /* overflow: hidden; */
+  }
+
+  .transaction-table{
+    width: 900px;
+    overflow-x: scroll;
+  }
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 760px) {
+
+  .transaction-table td, .transaction-table {
+    border: 1px solid rgb(231, 231, 231);
+    /* padding: 10px; */
+  }
+
+  .add-category-input {
+    min-width: 300px;
+    max-width: 530px;
+  }
+
+  .transaction-table th {
+    padding: 10px 0px;
+    font-weight: 500;
+    /* font-size: 12px; */
+    background-color: #f1f1f1;
+  }
+
+  .heading-buttons-top-div {
+    height: 140px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+  .modal-btns {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .add-category-input, .search-input, .filter-select {
+    min-width: 150px;
+    width: 170px;
+    height: 32px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 2px 3px;
+    margin-right: 5px;
+    max-width: 230px;
+  }
+
+
+  .category-btn {
+    height: 32px;
+    width: 85px;
+    padding: 5px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  .heading-buttons-top-div {
+    height: 140px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+  }
+
+  .transaction-table td, .transaction-table {
+    border: 1px solid rgb(231, 231, 231);
+    /* padding: 5px;
+    font-size: 12px; */
+  }
+
+  .td-amount span {
+    /* font-size: 10px; */
+  }
+
+
+
+  .transaction-table th {
+    /* padding: 10px 0px; */
+    font-weight: 400;
+    font-size: 12px;
+    background-color: #f1f1f1;
+  }
+
+  /* .display-transaction-div {
+    width: 95%;
+  } */
+
+  .transaction-table .total-amount, .transaction-table .total-td {
+    /* font-size: 12px; */
+    font-weight: bold;
+    background-color: rgb(231, 231, 231);
+  }
+
+  .transaction-table .td-id, .transaction-table .td-date {
+    /* font-size: 10px; */
+    color: rgb(102, 102, 102);
+    /* padding: 2px; */
+  }
+
+}
+
+
+@media screen and (max-width: 400px) {
+  .add-category-input {
+    width: 140px;
+
+  }
+}
